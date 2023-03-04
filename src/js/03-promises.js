@@ -42,7 +42,6 @@ formEl.addEventListener('submit', event => {
 // Функція створення Promise
 function createPromise(position, delay) {
   const shouldResolve = Math.random() > 0.3;
-  console.log(shouldResolve);
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (shouldResolve) {
