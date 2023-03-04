@@ -5,7 +5,7 @@ import Notiflix from 'notiflix';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 // Змінні
-formEl = document.querySelector('form');
+const formEl = document.querySelector('.form');
 let firstDelay = null;
 let stepDelay = null;
 let amount = null;
