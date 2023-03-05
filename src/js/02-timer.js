@@ -85,6 +85,10 @@ function startTimer() {
     hourEl.textContent = hours;
     minEl.textContent = minutes;
     secEl.textContent = seconds;
+    if (deltaTime <= 0) {
+      startBtnEl.disabled = true;
+      clearTimer();
+    }
   }, 1000);
 }
 
